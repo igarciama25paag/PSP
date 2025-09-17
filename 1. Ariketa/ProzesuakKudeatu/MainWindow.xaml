@@ -1,0 +1,17 @@
+﻿<Window x:Class="ProzesuakKudeatu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProzesuakKudeatu"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="500">
+    <Grid>
+        <Button Click="prozesuaHasi" Content="FTP prozesua hasi" HorizontalAlignment="Left" Margin="31,37,0,0" VerticalAlignment="Top" Padding="10"/>
+        <Button Click="prozesuaAmaitu" Content="Prozesua amaitu" HorizontalAlignment="Left" Margin="168,37,0,0" VerticalAlignment="Top" Padding="10"/>
+        <Label x:Name="label" HorizontalAlignment="Left" Margin="294,43,0,0" VerticalAlignment="Top"/>
+        <Button Click="prozesuakErakutsi" Content="Sistemako prozesuak erakutsi" HorizontalAlignment="Left" Margin="31,97,0,0" VerticalAlignment="Top" Padding="10"/>
+        <ComboBox x:Name="combo" HorizontalAlignment="Left" Margin="234,105,0,0" VerticalAlignment="Top" Width="229"/>
+
+    </Grid>
+</Window>
