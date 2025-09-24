@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZerbitzariKalkulagailua", "ZerbitzariKalkulagailua\ZerbitzariKalkulagailua.csproj", "{B795E131-9206-4EB3-8720-ADBA51E9167D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B795E131-9206-4EB3-8720-ADBA51E9167D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B795E131-9206-4EB3-8720-ADBA51E9167D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B795E131-9206-4EB3-8720-ADBA51E9167D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B795E131-9206-4EB3-8720-ADBA51E9167D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28D0CCD1-91D4-4BD2-AF22-6730B98CBA77}
+	EndGlobalSection
+EndGlobal

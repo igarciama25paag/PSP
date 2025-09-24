@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PSP\\Ariketak\\2. Ariketa\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B795E131-9206-4EB3-8720-ADBA51E9167D}|ZerbitzariKalkulagailua\\ZerbitzariKalkulagailua.csproj|d:\\psp\\ariketak\\2. ariketa\\zerbitzarikalkulagailua\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B795E131-9206-4EB3-8720-ADBA51E9167D}|ZerbitzariKalkulagailua\\ZerbitzariKalkulagailua.csproj|solutionrelative:zerbitzarikalkulagailua\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PSP\\Ariketak\\2. Ariketa\\ZerbitzariKalkulagailua\\Program.cs",
+              "RelativeDocumentMoniker": "ZerbitzariKalkulagailua\\Program.cs",
+              "ToolTip": "D:\\PSP\\Ariketak\\2. Ariketa\\ZerbitzariKalkulagailua\\Program.cs",
+              "RelativeToolTip": "ZerbitzariKalkulagailua\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T07:41:26.123Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
