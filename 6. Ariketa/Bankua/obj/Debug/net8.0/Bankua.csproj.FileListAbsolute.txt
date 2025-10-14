@@ -1,0 +1,15 @@
+D:\PSP\Ariketak\6. Ariketa\Bankua\bin\Debug\net8.0\Bankua.exe
+D:\PSP\Ariketak\6. Ariketa\Bankua\bin\Debug\net8.0\Bankua.deps.json
+D:\PSP\Ariketak\6. Ariketa\Bankua\bin\Debug\net8.0\Bankua.runtimeconfig.json
+D:\PSP\Ariketak\6. Ariketa\Bankua\bin\Debug\net8.0\Bankua.dll
+D:\PSP\Ariketak\6. Ariketa\Bankua\bin\Debug\net8.0\Bankua.pdb
+D:\PSP\Ariketak\6. Ariketa\Bankua\obj\Debug\net8.0\Bankua.GeneratedMSBuildEditorConfig.editorconfig
+D:\PSP\Ariketak\6. Ariketa\Bankua\obj\Debug\net8.0\Bankua.AssemblyInfoInputs.cache
+D:\PSP\Ariketak\6. Ariketa\Bankua\obj\Debug\net8.0\Bankua.AssemblyInfo.cs
+D:\PSP\Ariketak\6. Ariketa\Bankua\obj\Debug\net8.0\Bankua.csproj.CoreCompileInputs.cache
+D:\PSP\Ariketak\6. Ariketa\Bankua\obj\Debug\net8.0\Bankua.sourcelink.json
+D:\PSP\Ariketak\6. Ariketa\Bankua\obj\Debug\net8.0\Bankua.dll
+D:\PSP\Ariketak\6. Ariketa\Bankua\obj\Debug\net8.0\refint\Bankua.dll
+D:\PSP\Ariketak\6. Ariketa\Bankua\obj\Debug\net8.0\Bankua.pdb
+D:\PSP\Ariketak\6. Ariketa\Bankua\obj\Debug\net8.0\Bankua.genruntimeconfig.cache
+D:\PSP\Ariketak\6. Ariketa\Bankua\obj\Debug\net8.0\ref\Bankua.dll

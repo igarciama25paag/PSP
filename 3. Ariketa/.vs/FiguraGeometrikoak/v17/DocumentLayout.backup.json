@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PSP\\Ariketak\\3. Ariketa\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BDF0D834-5410-42DF-913C-3F5773AD7B95}|FiguraGeometrikoakZerbitzari\\FiguraGeometrikoakZerbitzari.csproj|d:\\psp\\ariketak\\3. ariketa\\figurageometrikoakzerbitzari\\zerbitzari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDF0D834-5410-42DF-913C-3F5773AD7B95}|FiguraGeometrikoakZerbitzari\\FiguraGeometrikoakZerbitzari.csproj|solutionrelative:figurageometrikoakzerbitzari\\zerbitzari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5500B2DA-085B-40EB-9EB2-DCE108E24E9A}|FiguraGeometrikoak\\FiguraGeometrikoakBezero.csproj|d:\\psp\\ariketak\\3. ariketa\\figurageometrikoak\\bezero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5500B2DA-085B-40EB-9EB2-DCE108E24E9A}|FiguraGeometrikoak\\FiguraGeometrikoakBezero.csproj|solutionrelative:figurageometrikoak\\bezero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Zerbitzari.cs",
+              "DocumentMoniker": "D:\\PSP\\Ariketak\\3. Ariketa\\FiguraGeometrikoakZerbitzari\\Zerbitzari.cs",
+              "RelativeDocumentMoniker": "FiguraGeometrikoakZerbitzari\\Zerbitzari.cs",
+              "ToolTip": "D:\\PSP\\Ariketak\\3. Ariketa\\FiguraGeometrikoakZerbitzari\\Zerbitzari.cs",
+              "RelativeToolTip": "FiguraGeometrikoakZerbitzari\\Zerbitzari.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T07:13:46.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bezero.cs",
+              "DocumentMoniker": "D:\\PSP\\Ariketak\\3. Ariketa\\FiguraGeometrikoak\\Bezero.cs",
+              "RelativeDocumentMoniker": "FiguraGeometrikoak\\Bezero.cs",
+              "ToolTip": "D:\\PSP\\Ariketak\\3. Ariketa\\FiguraGeometrikoak\\Bezero.cs",
+              "RelativeToolTip": "FiguraGeometrikoak\\Bezero.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T07:13:35.328Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

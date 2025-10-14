@@ -1,0 +1,30 @@
+D:\PSP\Ariketak\FiguraGeometrikoak\FiguraGeometrikoakZerbitzari\bin\Debug\net8.0\FiguraGeometrikoakZerbitzari.exe
+D:\PSP\Ariketak\FiguraGeometrikoak\FiguraGeometrikoakZerbitzari\bin\Debug\net8.0\FiguraGeometrikoakZerbitzari.deps.json
+D:\PSP\Ariketak\FiguraGeometrikoak\FiguraGeometrikoakZerbitzari\bin\Debug\net8.0\FiguraGeometrikoakZerbitzari.runtimeconfig.json
+D:\PSP\Ariketak\FiguraGeometrikoak\FiguraGeometrikoakZerbitzari\bin\Debug\net8.0\FiguraGeometrikoakZerbitzari.dll
+D:\PSP\Ariketak\FiguraGeometrikoak\FiguraGeometrikoakZerbitzari\bin\Debug\net8.0\FiguraGeometrikoakZerbitzari.pdb
+D:\PSP\Ariketak\FiguraGeometrikoak\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.GeneratedMSBuildEditorConfig.editorconfig
+D:\PSP\Ariketak\FiguraGeometrikoak\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.AssemblyInfoInputs.cache
+D:\PSP\Ariketak\FiguraGeometrikoak\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.AssemblyInfo.cs
+D:\PSP\Ariketak\FiguraGeometrikoak\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.csproj.CoreCompileInputs.cache
+D:\PSP\Ariketak\FiguraGeometrikoak\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.sourcelink.json
+D:\PSP\Ariketak\FiguraGeometrikoak\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.dll
+D:\PSP\Ariketak\FiguraGeometrikoak\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\refint\FiguraGeometrikoakZerbitzari.dll
+D:\PSP\Ariketak\FiguraGeometrikoak\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.pdb
+D:\PSP\Ariketak\FiguraGeometrikoak\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.genruntimeconfig.cache
+D:\PSP\Ariketak\FiguraGeometrikoak\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\ref\FiguraGeometrikoakZerbitzari.dll
+D:\PSP\Ariketak\3. Ariketa\FiguraGeometrikoakZerbitzari\bin\Debug\net8.0\FiguraGeometrikoakZerbitzari.exe
+D:\PSP\Ariketak\3. Ariketa\FiguraGeometrikoakZerbitzari\bin\Debug\net8.0\FiguraGeometrikoakZerbitzari.deps.json
+D:\PSP\Ariketak\3. Ariketa\FiguraGeometrikoakZerbitzari\bin\Debug\net8.0\FiguraGeometrikoakZerbitzari.runtimeconfig.json
+D:\PSP\Ariketak\3. Ariketa\FiguraGeometrikoakZerbitzari\bin\Debug\net8.0\FiguraGeometrikoakZerbitzari.dll
+D:\PSP\Ariketak\3. Ariketa\FiguraGeometrikoakZerbitzari\bin\Debug\net8.0\FiguraGeometrikoakZerbitzari.pdb
+D:\PSP\Ariketak\3. Ariketa\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.GeneratedMSBuildEditorConfig.editorconfig
+D:\PSP\Ariketak\3. Ariketa\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.AssemblyInfoInputs.cache
+D:\PSP\Ariketak\3. Ariketa\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.AssemblyInfo.cs
+D:\PSP\Ariketak\3. Ariketa\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.csproj.CoreCompileInputs.cache
+D:\PSP\Ariketak\3. Ariketa\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.sourcelink.json
+D:\PSP\Ariketak\3. Ariketa\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.dll
+D:\PSP\Ariketak\3. Ariketa\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\refint\FiguraGeometrikoakZerbitzari.dll
+D:\PSP\Ariketak\3. Ariketa\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.pdb
+D:\PSP\Ariketak\3. Ariketa\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\FiguraGeometrikoakZerbitzari.genruntimeconfig.cache
+D:\PSP\Ariketak\3. Ariketa\FiguraGeometrikoakZerbitzari\obj\Debug\net8.0\ref\FiguraGeometrikoakZerbitzari.dll

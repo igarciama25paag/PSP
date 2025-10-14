@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "FiguraGeometrikoakZerbitzari\\FiguraGeometrikoakZerbitzari.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "FiguraGeometrikoak\\FiguraGeometrikoakBezero.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
