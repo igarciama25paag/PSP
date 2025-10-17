@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bankua")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30105698c21a759e6b20eab9ee34cb18d4b3edf9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b8dfa3ff49f79884974819ad78efaea607a9d75")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bankua")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bankua")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

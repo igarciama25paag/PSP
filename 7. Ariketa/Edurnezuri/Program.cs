@@ -1,41 +1,109 @@
 ﻿class Edurnezuri
 {
-    public static void main(string[] args)
+    public readonly static Object janLocker = new();
+    public static void Main()
     {
-        Aulki[] mahaia = { new Aulki(), new Aulki(), new Aulki(), new Aulki() };
+        Ipotx[] ipotxak =
+        {
+            new("Dok"),
+            new("Irribarri"),
+            new("Mutur"),
+            new("Lohi"),
+            new("Tinko"),
+            new("Hala"),
+            new("Txiki")
+        };
+
+        // Edurnezuri bizitza
         while (true)
         {
-            Thread.Sleep(3000);
+            Zerbitzatu();
+            Paseatu();
         }
     }
+
+    public static void Zerbitzatu()
+    {
+        lock (janLocker)
+        {
+            Console.WriteLine("EDURNEZURI ipotxak zerbitzatu");
+            Monitor.PulseAll(janLocker);
+        }
+    }
+
+    public static void Paseatu()
+    {
+        Console.WriteLine("EDURNEZURI 5000 segunduz paseatzen");
+        Thread.Sleep(5000);
+    }
+}
+
+static class Mahaia
+{
+    public static Ipotx[] exerlekuak = new Ipotx[4];
+    public readonly static Object eseriLocker = new();
 }
 
 class Ipotx
 {
-    private string izena { get; set; }
-    private Thread bizitza;
+    private string Izena { get; set; }
+    private readonly Random random = new();
 
-    Ipotx(string izena)
+    public Ipotx(string izena)
     {
-        this.izena = izena;
-        bizitza = new Thread(() =>
+        Izena = izena;
+
+        // Ipotx bizitza
+        new Thread(() =>
         {
             while (true)
             {
-
+                Lanera();
+                ExeriEtaJan();
             }
-        });
+        }).Start();
     }
 
-    void jan(Aulki aulkia)
+    void Lanera()
     {
-        Thread.Sleep(1000);
-        aulkia.ipotxa = null;
+        int time = random.Next(2000, 5000);
+        Console.WriteLine("Lanean " + time + " segunduz: " + Izena);
+        Thread.Sleep(time);
     }
-}
 
-class Aulki
-{
-    public Ipotx ipotxa { get; set; }
-    private Object okupatuta;
+    void ExeriEtaJan()
+    {
+        // Eserlekua bilatu
+        int n = -1;
+        while (n == -1)
+        {
+            lock (Mahaia.eseriLocker)
+            {
+                n = Array.IndexOf(Mahaia.exerlekuak, null);
+                // Eserleku bat libre geratzea itxaron
+                if (n == -1) Monitor.Wait(Mahaia.eseriLocker);
+                // Eseri
+                else Mahaia.exerlekuak[n] = this;
+            }
+        }
+
+        // Zerbitzatzen itxaroten
+        lock (Edurnezuri.janLocker)
+        {
+            Console.WriteLine("Zerbitzatzeari itxaroten: " + Izena);
+            Monitor.Wait(Edurnezuri.janLocker);
+        }
+
+        // Jaten
+        int time = random.Next(2000, 5000);
+        Console.WriteLine("Jaten " + time + " segunduz: " + Izena);
+        Thread.Sleep(time);
+
+        // Eserlekua libre utzi
+        lock (Mahaia.eseriLocker)
+        {
+            Mahaia.exerlekuak[Array.IndexOf(Mahaia.exerlekuak, this)] = null;
+            Monitor.PulseAll(Mahaia.eseriLocker);
+        }
+    }
 }
