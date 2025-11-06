@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "BokalakZerbitzari.csproj",
+        "Action": "StartWithoutDebugging",
+        "DebugTarget": "BokalakZerbitzari"
+      },
+      {
+        "Path": "..\\BokalakBezero\\BokalakBezero.csproj",
+        "Action": "StartWithoutDebugging",
+        "DebugTarget": "BokalakBezero"
+      }
+    ]
+  }
+]

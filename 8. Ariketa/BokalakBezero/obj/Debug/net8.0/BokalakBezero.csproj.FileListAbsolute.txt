@@ -1,0 +1,30 @@
+D:\PSP\Ariketak\BokalakBezero\bin\Debug\net8.0\BokalakBezero.exe
+D:\PSP\Ariketak\BokalakBezero\bin\Debug\net8.0\BokalakBezero.deps.json
+D:\PSP\Ariketak\BokalakBezero\bin\Debug\net8.0\BokalakBezero.runtimeconfig.json
+D:\PSP\Ariketak\BokalakBezero\bin\Debug\net8.0\BokalakBezero.dll
+D:\PSP\Ariketak\BokalakBezero\bin\Debug\net8.0\BokalakBezero.pdb
+D:\PSP\Ariketak\BokalakBezero\obj\Debug\net8.0\BokalakBezero.GeneratedMSBuildEditorConfig.editorconfig
+D:\PSP\Ariketak\BokalakBezero\obj\Debug\net8.0\BokalakBezero.AssemblyInfoInputs.cache
+D:\PSP\Ariketak\BokalakBezero\obj\Debug\net8.0\BokalakBezero.AssemblyInfo.cs
+D:\PSP\Ariketak\BokalakBezero\obj\Debug\net8.0\BokalakBezero.csproj.CoreCompileInputs.cache
+D:\PSP\Ariketak\BokalakBezero\obj\Debug\net8.0\BokalakBezero.sourcelink.json
+D:\PSP\Ariketak\BokalakBezero\obj\Debug\net8.0\BokalakBezero.dll
+D:\PSP\Ariketak\BokalakBezero\obj\Debug\net8.0\refint\BokalakBezero.dll
+D:\PSP\Ariketak\BokalakBezero\obj\Debug\net8.0\BokalakBezero.pdb
+D:\PSP\Ariketak\BokalakBezero\obj\Debug\net8.0\BokalakBezero.genruntimeconfig.cache
+D:\PSP\Ariketak\BokalakBezero\obj\Debug\net8.0\ref\BokalakBezero.dll
+D:\PSP\Ariketak\8. Ariketa\BokalakBezero\bin\Debug\net8.0\BokalakBezero.exe
+D:\PSP\Ariketak\8. Ariketa\BokalakBezero\bin\Debug\net8.0\BokalakBezero.deps.json
+D:\PSP\Ariketak\8. Ariketa\BokalakBezero\bin\Debug\net8.0\BokalakBezero.runtimeconfig.json
+D:\PSP\Ariketak\8. Ariketa\BokalakBezero\bin\Debug\net8.0\BokalakBezero.dll
+D:\PSP\Ariketak\8. Ariketa\BokalakBezero\bin\Debug\net8.0\BokalakBezero.pdb
+D:\PSP\Ariketak\8. Ariketa\BokalakBezero\obj\Debug\net8.0\BokalakBezero.GeneratedMSBuildEditorConfig.editorconfig
+D:\PSP\Ariketak\8. Ariketa\BokalakBezero\obj\Debug\net8.0\BokalakBezero.AssemblyInfoInputs.cache
+D:\PSP\Ariketak\8. Ariketa\BokalakBezero\obj\Debug\net8.0\BokalakBezero.AssemblyInfo.cs
+D:\PSP\Ariketak\8. Ariketa\BokalakBezero\obj\Debug\net8.0\BokalakBezero.csproj.CoreCompileInputs.cache
+D:\PSP\Ariketak\8. Ariketa\BokalakBezero\obj\Debug\net8.0\BokalakBezero.sourcelink.json
+D:\PSP\Ariketak\8. Ariketa\BokalakBezero\obj\Debug\net8.0\BokalakBezero.dll
+D:\PSP\Ariketak\8. Ariketa\BokalakBezero\obj\Debug\net8.0\refint\BokalakBezero.dll
+D:\PSP\Ariketak\8. Ariketa\BokalakBezero\obj\Debug\net8.0\BokalakBezero.pdb
+D:\PSP\Ariketak\8. Ariketa\BokalakBezero\obj\Debug\net8.0\BokalakBezero.genruntimeconfig.cache
+D:\PSP\Ariketak\8. Ariketa\BokalakBezero\obj\Debug\net8.0\ref\BokalakBezero.dll

@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "ZerbitzariEtaBezero",
+    "Projects": [
+      {
+        "Path": "DadoaZerbitzari.csproj",
+        "Action": "Start",
+        "DebugTarget": "DadoaZerbitzari"
+      },
+      {
+        "Path": "..\\DadoaBezero\\DadoaBezero.csproj",
+        "Action": "Start",
+        "DebugTarget": "DadoaBezero"
+      }
+    ]
+  }
+]

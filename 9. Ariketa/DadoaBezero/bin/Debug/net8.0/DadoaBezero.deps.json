@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DadoaBezero/1.0.0": {
+        "runtime": {
+          "DadoaBezero.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DadoaBezero/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

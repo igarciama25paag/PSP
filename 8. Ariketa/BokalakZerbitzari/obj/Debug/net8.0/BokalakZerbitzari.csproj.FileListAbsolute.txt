@@ -1,0 +1,30 @@
+D:\PSP\Ariketak\BokalakZerbitzari\bin\Debug\net8.0\BokalakZerbitzari.exe
+D:\PSP\Ariketak\BokalakZerbitzari\bin\Debug\net8.0\BokalakZerbitzari.deps.json
+D:\PSP\Ariketak\BokalakZerbitzari\bin\Debug\net8.0\BokalakZerbitzari.runtimeconfig.json
+D:\PSP\Ariketak\BokalakZerbitzari\bin\Debug\net8.0\BokalakZerbitzari.dll
+D:\PSP\Ariketak\BokalakZerbitzari\bin\Debug\net8.0\BokalakZerbitzari.pdb
+D:\PSP\Ariketak\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.GeneratedMSBuildEditorConfig.editorconfig
+D:\PSP\Ariketak\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.AssemblyInfoInputs.cache
+D:\PSP\Ariketak\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.AssemblyInfo.cs
+D:\PSP\Ariketak\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.csproj.CoreCompileInputs.cache
+D:\PSP\Ariketak\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.sourcelink.json
+D:\PSP\Ariketak\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.dll
+D:\PSP\Ariketak\BokalakZerbitzari\obj\Debug\net8.0\refint\BokalakZerbitzari.dll
+D:\PSP\Ariketak\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.pdb
+D:\PSP\Ariketak\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.genruntimeconfig.cache
+D:\PSP\Ariketak\BokalakZerbitzari\obj\Debug\net8.0\ref\BokalakZerbitzari.dll
+D:\PSP\Ariketak\8. Ariketa\BokalakZerbitzari\bin\Debug\net8.0\BokalakZerbitzari.exe
+D:\PSP\Ariketak\8. Ariketa\BokalakZerbitzari\bin\Debug\net8.0\BokalakZerbitzari.deps.json
+D:\PSP\Ariketak\8. Ariketa\BokalakZerbitzari\bin\Debug\net8.0\BokalakZerbitzari.runtimeconfig.json
+D:\PSP\Ariketak\8. Ariketa\BokalakZerbitzari\bin\Debug\net8.0\BokalakZerbitzari.dll
+D:\PSP\Ariketak\8. Ariketa\BokalakZerbitzari\bin\Debug\net8.0\BokalakZerbitzari.pdb
+D:\PSP\Ariketak\8. Ariketa\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.GeneratedMSBuildEditorConfig.editorconfig
+D:\PSP\Ariketak\8. Ariketa\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.AssemblyInfoInputs.cache
+D:\PSP\Ariketak\8. Ariketa\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.AssemblyInfo.cs
+D:\PSP\Ariketak\8. Ariketa\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.csproj.CoreCompileInputs.cache
+D:\PSP\Ariketak\8. Ariketa\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.sourcelink.json
+D:\PSP\Ariketak\8. Ariketa\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.dll
+D:\PSP\Ariketak\8. Ariketa\BokalakZerbitzari\obj\Debug\net8.0\refint\BokalakZerbitzari.dll
+D:\PSP\Ariketak\8. Ariketa\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.pdb
+D:\PSP\Ariketak\8. Ariketa\BokalakZerbitzari\obj\Debug\net8.0\BokalakZerbitzari.genruntimeconfig.cache
+D:\PSP\Ariketak\8. Ariketa\BokalakZerbitzari\obj\Debug\net8.0\ref\BokalakZerbitzari.dll

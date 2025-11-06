@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PSP\\Ariketak\\9. Ariketa\\DadoaZerbitzari\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0566A1F2-2DE4-4FF6-B7C1-1178F50D3B50}|DadoaZerbitzari.csproj|d:\\psp\\ariketak\\9. ariketa\\dadoazerbitzari\\zerbitzari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0566A1F2-2DE4-4FF6-B7C1-1178F50D3B50}|DadoaZerbitzari.csproj|solutionrelative:zerbitzari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95EB07B3-16DA-4DFA-8C20-2DA0C91D04DB}|..\\DadoaBezero\\DadoaBezero.csproj|d:\\psp\\ariketak\\9. ariketa\\dadoabezero\\bezero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Zerbitzari.cs",
+              "DocumentMoniker": "D:\\PSP\\Ariketak\\9. Ariketa\\DadoaZerbitzari\\Zerbitzari.cs",
+              "RelativeDocumentMoniker": "Zerbitzari.cs",
+              "ToolTip": "D:\\PSP\\Ariketak\\9. Ariketa\\DadoaZerbitzari\\Zerbitzari.cs",
+              "RelativeToolTip": "Zerbitzari.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T08:45:01.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bezero.cs",
+              "DocumentMoniker": "D:\\PSP\\Ariketak\\9. Ariketa\\DadoaBezero\\Bezero.cs",
+              "RelativeDocumentMoniker": "..\\DadoaBezero\\Bezero.cs",
+              "ToolTip": "D:\\PSP\\Ariketak\\9. Ariketa\\DadoaBezero\\Bezero.cs",
+              "RelativeToolTip": "..\\DadoaBezero\\Bezero.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAwwCcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T08:45:39.123Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
