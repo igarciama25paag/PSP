@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ArgazkiakBezero/1.0.0": {
+        "runtime": {
+          "ArgazkiakBezero.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ArgazkiakBezero/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
