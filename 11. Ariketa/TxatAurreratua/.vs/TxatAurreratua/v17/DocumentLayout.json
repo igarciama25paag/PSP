@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PSP\\Ariketak\\11. Ariketa\\TxatAurreratua\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD3497F-DCD9-43C3-B358-AB2D7A94C4AB}|TxatAurreratua.csproj|d:\\psp\\ariketak\\11. ariketa\\txataurreratua\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD3497F-DCD9-43C3-B358-AB2D7A94C4AB}|TxatAurreratua.csproj|solutionrelative:server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD3497F-DCD9-43C3-B358-AB2D7A94C4AB}|TxatAurreratua.csproj|d:\\psp\\ariketak\\11. ariketa\\txataurreratua\\serversideclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD3497F-DCD9-43C3-B358-AB2D7A94C4AB}|TxatAurreratua.csproj|solutionrelative:serversideclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD3497F-DCD9-43C3-B358-AB2D7A94C4AB}|TxatAurreratua.csproj|d:\\psp\\ariketak\\11. ariketa\\txataurreratua\\serverwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD3497F-DCD9-43C3-B358-AB2D7A94C4AB}|TxatAurreratua.csproj|solutionrelative:serverwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642B69AE-C5DD-42D0-8412-FA4AE64BBA37}|..\\TxatBezeroa\\TxatBezeroa.csproj|d:\\psp\\ariketak\\11. ariketa\\txatbezeroa\\clientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642B69AE-C5DD-42D0-8412-FA4AE64BBA37}|..\\TxatBezeroa\\TxatBezeroa.csproj|d:\\psp\\ariketak\\11. ariketa\\txatbezeroa\\clientwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD3497F-DCD9-43C3-B358-AB2D7A94C4AB}|TxatAurreratua.csproj|d:\\psp\\ariketak\\11. ariketa\\txataurreratua\\serverwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FBD3497F-DCD9-43C3-B358-AB2D7A94C4AB}|TxatAurreratua.csproj|solutionrelative:serverwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642B69AE-C5DD-42D0-8412-FA4AE64BBA37}|..\\TxatBezeroa\\TxatBezeroa.csproj|d:\\psp\\ariketak\\11. ariketa\\txatbezeroa\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientWindow.xaml",
+              "DocumentMoniker": "D:\\PSP\\Ariketak\\11. Ariketa\\TxatBezeroa\\ClientWindow.xaml",
+              "RelativeDocumentMoniker": "..\\TxatBezeroa\\ClientWindow.xaml",
+              "ToolTip": "D:\\PSP\\Ariketak\\11. Ariketa\\TxatBezeroa\\ClientWindow.xaml",
+              "RelativeToolTip": "..\\TxatBezeroa\\ClientWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-27T12:09:24.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientWindow.xaml.cs",
+              "DocumentMoniker": "D:\\PSP\\Ariketak\\11. Ariketa\\TxatBezeroa\\ClientWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\TxatBezeroa\\ClientWindow.xaml.cs",
+              "ToolTip": "D:\\PSP\\Ariketak\\11. Ariketa\\TxatBezeroa\\ClientWindow.xaml.cs",
+              "RelativeToolTip": "..\\TxatBezeroa\\ClientWindow.xaml.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwBwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T09:46:13.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Client.cs",
+              "DocumentMoniker": "D:\\PSP\\Ariketak\\11. Ariketa\\TxatBezeroa\\Client.cs",
+              "RelativeDocumentMoniker": "..\\TxatBezeroa\\Client.cs",
+              "ToolTip": "D:\\PSP\\Ariketak\\11. Ariketa\\TxatBezeroa\\Client.cs",
+              "RelativeToolTip": "..\\TxatBezeroa\\Client.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAgwD0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T11:15:10.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServerWindow.xaml",
+              "DocumentMoniker": "D:\\PSP\\Ariketak\\11. Ariketa\\TxatAurreratua\\ServerWindow.xaml",
+              "RelativeDocumentMoniker": "ServerWindow.xaml",
+              "ToolTip": "D:\\PSP\\Ariketak\\11. Ariketa\\TxatAurreratua\\ServerWindow.xaml",
+              "RelativeToolTip": "ServerWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-26T11:43:43.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServerWindow.xaml.cs",
+              "DocumentMoniker": "D:\\PSP\\Ariketak\\11. Ariketa\\TxatAurreratua\\ServerWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ServerWindow.xaml.cs",
+              "ToolTip": "D:\\PSP\\Ariketak\\11. Ariketa\\TxatAurreratua\\ServerWindow.xaml.cs",
+              "RelativeToolTip": "ServerWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwCYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T11:43:42.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Server.cs",
+              "DocumentMoniker": "D:\\PSP\\Ariketak\\11. Ariketa\\TxatAurreratua\\Server.cs",
+              "RelativeDocumentMoniker": "Server.cs",
+              "ToolTip": "D:\\PSP\\Ariketak\\11. Ariketa\\TxatAurreratua\\Server.cs",
+              "RelativeToolTip": "Server.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwDgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:57:41.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServersideClient.cs",
+              "DocumentMoniker": "D:\\PSP\\Ariketak\\11. Ariketa\\TxatAurreratua\\ServersideClient.cs",
+              "RelativeDocumentMoniker": "ServersideClient.cs",
+              "ToolTip": "D:\\PSP\\Ariketak\\11. Ariketa\\TxatAurreratua\\ServersideClient.cs",
+              "RelativeToolTip": "ServersideClient.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADgAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T13:06:14.162Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
