@@ -19,7 +19,7 @@
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Height="80">
             <Button x:Name="konektatuButton" Click="Konektatu" Content="Zerbitzarira konektatu" Margin="10" Width="150"/>
-            <Button x:Name="deskonektatuButton" Click="Deskonektatu"  Content="Zerbitzaritik deskonektatu" Margin="10" Width="150" IsEnabled="False"/>
+            <Button x:Name="deskonektatuButton" Click="Deskonektatu" Content="Zerbitzaritik deskonektatu" Margin="10" Width="150" IsEnabled="False"/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Margin="20,20,20,0">
@@ -36,7 +36,7 @@
             <TextBlock x:Name="erroreMezua" TextAlignment="Center" Margin="5" Foreground="Red" FontStyle="Italic"/>
         </StackPanel>
 
-        <GroupBox Grid.Row="2" Header="Txat" Margin="30,10,30,30">
+        <GroupBox x:Name="txatBox" IsEnabled="False" Grid.Row="2" Header="Txat" Margin="30,10,30,30">
             <DockPanel>
                 <StackPanel DockPanel.Dock="Bottom" Margin="10,0,10,10">
                     <TextBox x:Name="mezua"/>

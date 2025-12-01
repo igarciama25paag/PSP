@@ -36,7 +36,13 @@ namespace TxatBezeroa
 
         private void Konektatu(object sender, RoutedEventArgs e)
         {
-            Client.Konektatu(ip.Text.Trim(), izena.Text.Trim());
+            if (izena.Text != string.Empty)
+                Client.Konektatu(ip.Text.Trim(), izena.Text.Trim());
+            else
+            {
+                erroreMezua.Text = "Izena ezin da utsik utzi";
+                izena.Focus();
+            }
         }
 
         private void Deskonektatu(object sender, RoutedEventArgs e)
@@ -77,6 +83,27 @@ namespace TxatBezeroa
                         {
                             erroreMezua.Text = log;
                         }
+                    });
+                },
+
+                ConnectedEvent = () =>
+                {
+                    Dispatcher.Invoke(() =>
+                    {
+                        txat.Items.Clear();
+                        konektatuButton.IsEnabled = false;
+                        deskonektatuButton.IsEnabled = true;
+                        txatBox.IsEnabled = true;
+                    });
+                },
+
+                DisconnectedEvent = () =>
+                {
+                    Dispatcher.Invoke(() =>
+                    {
+                        konektatuButton.IsEnabled = true;
+                        deskonektatuButton.IsEnabled = false;
+                        txatBox.IsEnabled = false;
                     });
                 }
             };

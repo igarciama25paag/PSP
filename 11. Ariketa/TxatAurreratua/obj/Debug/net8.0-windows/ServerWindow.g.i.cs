@@ -85,7 +85,7 @@ namespace TxatAurreratua {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TxatAurreratua;component/serverwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TxatAurreratua;V1.0.0.0;component/serverwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ServerWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

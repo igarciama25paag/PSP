@@ -3,9 +3,11 @@ D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\bin\Debug\net8.0-windows\TxatAurrerat
 D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\bin\Debug\net8.0-windows\TxatAurreratua.runtimeconfig.json
 D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\bin\Debug\net8.0-windows\TxatAurreratua.dll
 D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\bin\Debug\net8.0-windows\TxatAurreratua.pdb
+D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\obj\Debug\net8.0-windows\UI\ServerWindow.g.cs
 D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\obj\Debug\net8.0-windows\App.g.cs
 D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\obj\Debug\net8.0-windows\TxatAurreratua_MarkupCompile.cache
 D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\obj\Debug\net8.0-windows\TxatAurreratua_MarkupCompile.lref
+D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\obj\Debug\net8.0-windows\UI\ServerWindow.baml
 D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\obj\Debug\net8.0-windows\TxatAurreratua.g.resources
 D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\obj\Debug\net8.0-windows\TxatAurreratua.GeneratedMSBuildEditorConfig.editorconfig
 D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\obj\Debug\net8.0-windows\TxatAurreratua.AssemblyInfoInputs.cache
@@ -17,5 +19,3 @@ D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\obj\Debug\net8.0-windows\refint\TxatA
 D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\obj\Debug\net8.0-windows\TxatAurreratua.pdb
 D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\obj\Debug\net8.0-windows\TxatAurreratua.genruntimeconfig.cache
 D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\obj\Debug\net8.0-windows\ref\TxatAurreratua.dll
-D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\obj\Debug\net8.0-windows\ServerWindow.g.cs
-D:\PSP\Ariketak\11. Ariketa\TxatAurreratua\obj\Debug\net8.0-windows\ServerWindow.baml
