@@ -17,6 +17,7 @@ namespace TxatAurreratua.Util
         private readonly StreamReader Reader;
         private readonly StreamWriter Writer;
         private readonly string Izena;
+        private bool alive;
 
         public ServersideClient(Server zerbitzari, TcpClient bezero)
         {
@@ -24,12 +25,10 @@ namespace TxatAurreratua.Util
             Client = bezero;
             Stream = bezero.GetStream();
             Reader = new StreamReader(Stream);
-            Writer = new StreamWriter(Stream)
-            {
-                AutoFlush = true
-            };
+            Writer = new StreamWriter(Stream) { AutoFlush = true };
             Izena = Reader.ReadLine() ?? "null";
 
+            alive = true;
             Server.LogBerria($"Bezero berria '{Izena}'");
             CreateReceiverThread();
         }
@@ -40,20 +39,21 @@ namespace TxatAurreratua.Util
             {
                 try
                 {
-                    while (Server.alive)
+                    while (Server.alive && alive)
                     {
-                        var mezua = Reader.ReadLine();
+                        var mezua = Reader?.ReadLine();
                         if (mezua != null)
                         {
                             if (mezua == "/disconnect")
-                                CloseClient();
+                                alive = false;
                             else
                                 Server.SendEveryone($"{Izena}: {mezua}");
                         }
                     }
-                    Send("Zerbitzaria itzali da");
+                    if(!Server.alive)
+                        Send("Zerbitzaria itzali da");
                 }
-                catch { Server.LogBerria($"{Izena} bezero errorea"); }
+                catch { Server.LogBerria($"'{Izena}' bezero errorea"); }
                 finally { CloseClient(); }
             }).Start();
         }
@@ -62,9 +62,10 @@ namespace TxatAurreratua.Util
 
         public void CloseClient()
         {
-            Server.BezeroaEzabatu(this);
+            alive = false;
             Server.ClientDisconnectedEvent?.Invoke(this);
             Server.LogBerria($"'{Izena}' bezeroa deskonektatu da");
+            Client?.Close();
             Stream?.Close();
             Reader?.Close();
             Writer?.Close();

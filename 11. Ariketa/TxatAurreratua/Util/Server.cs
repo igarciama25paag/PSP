@@ -13,10 +13,10 @@ namespace TxatAurreratua.Util
     public class Server
     {
         private const int PORT = 5000;
-        private readonly object BezeroakLock = new();
         private TcpListener? listener;
         public bool alive = false;
-        private Thread? BezeroKonexioak;
+
+        private readonly object BezeroakLock = new();
 
         public delegate void ILogSent(string log);
         public ILogSent? LogSentEvent;
@@ -32,7 +32,7 @@ namespace TxatAurreratua.Util
         public void Piztu()
         {
             alive = true;
-            BezeroKonexioak = new Thread(() =>
+            new Thread(() =>
             {
                 try
                 {
@@ -47,15 +47,17 @@ namespace TxatAurreratua.Util
                 }
                 catch { LogBerria("Zerbitzari errorea"); Itzali(); }
                 finally { listener?.Stop(); Bezeroak.Clear(); }
-            });
-            BezeroKonexioak.Start();
+            }).Start();
         }
 
         public void Itzali()
         {
             alive = false;
-            listener?.Stop();
-            Bezeroak.Clear();
+            lock (BezeroakLock)
+            {
+                listener?.Stop();
+                Bezeroak.Clear();
+            }
             LogBerria("ZERBITZARIA itzalia da");
         }
 
@@ -73,15 +75,8 @@ namespace TxatAurreratua.Util
                     }
                 }
             }
-            catch { }
-        }
-
-        public void BezeroaEzabatu(ServersideClient bezero)
-        {
-            lock (BezeroakLock)
-            {
-                Bezeroak.Remove(bezero);
-            }
+            catch (SocketException) { }
+            catch (Exception) { LogBerria("Bezero konexio errorea"); }
         }
 
         public void LogBerria(string log)
@@ -97,8 +92,11 @@ namespace TxatAurreratua.Util
         public void SendEveryone(string mezua)
         {
             MezuBerria(mezua);
-            foreach (var bezero in Bezeroak)
-                bezero.Send($"[{DateTime.Now.ToShortTimeString()}] {mezua}");
+            lock (BezeroakLock)
+            {
+                foreach (var bezero in Bezeroak)
+                    bezero.Send($"[{DateTime.Now.ToShortTimeString()}] {mezua}");
+            }
         }
     }
 }

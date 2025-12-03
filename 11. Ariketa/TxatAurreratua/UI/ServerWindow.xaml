@@ -15,7 +15,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="0.6*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -23,7 +23,7 @@
 
         <DockPanel Margin="20">
             <TextBlock DockPanel.Dock="Top" Text="Logs"/>
-            <ListBox x:Name="logs" Height="80"/>
+            <ListBox x:Name="logs"/>
         </DockPanel>
 
         <DockPanel Grid.Row="1" Margin="20,0,20,20">

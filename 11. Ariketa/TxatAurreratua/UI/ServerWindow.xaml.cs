@@ -60,7 +60,9 @@ namespace TxatAurreratua.UI
                         {
                             lock (LogLock)
                             {
-                                logs.Items.Add(new ListBoxItem { Content = log });
+                                var item = new ListBoxItem { Content = log };
+                                logs.Items.Add(item);
+                                logs.ScrollIntoView(item);
                             }
                         });
                     },

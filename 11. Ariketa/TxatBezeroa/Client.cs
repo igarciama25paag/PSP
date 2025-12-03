@@ -39,10 +39,7 @@ namespace TxatBezeroa
 
                 Stream = client.GetStream();
                 Reader = new StreamReader(Stream);
-                Writer = new StreamWriter(Stream)
-                {
-                    AutoFlush = true
-                };
+                Writer = new StreamWriter(Stream) { AutoFlush = true };
 
                 Writer.WriteLine(Izena);
 
@@ -66,10 +63,13 @@ namespace TxatBezeroa
                 {
                     while (alive)
                     {
-                        MessageArrivedEvent?.Invoke(Reader?.ReadLine());
+                        var mezua = Reader?.ReadLine();
+                        if (mezua != null)
+                            MessageArrivedEvent?.Invoke(mezua);
                     }
                 }
-                catch
+                catch { }
+                finally
                 {
                     BezeroaItxi();
                     LogBerria("Konexioa amaitu da");
@@ -77,20 +77,14 @@ namespace TxatBezeroa
             }).Start();
         }
 
-        private void LogBerria(string log)
-        {
-            LogSentEvent?.Invoke(log);
-        }
+        private void LogBerria(string log) => LogSentEvent?.Invoke(log);
 
-        public void MezuaBidali(string mezua)
-        {
-            Writer?.WriteLine(mezua);
-        }
+        public void MezuaBidali(string mezua) => Writer?.WriteLine(mezua);
 
         public void BezeroaItxi()
         {
             alive = false;
-            Writer?.WriteLine("/disconnect");
+            MezuaBidali("/disconnect");
             client?.Close();
             Stream?.Close();
             Reader?.Close();
