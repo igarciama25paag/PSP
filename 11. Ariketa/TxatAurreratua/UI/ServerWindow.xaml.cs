@@ -73,7 +73,9 @@ namespace TxatAurreratua.UI
                         {
                             lock (TxatLock)
                             {
-                                txat.Items.Add(new ListBoxItem { Content = mezua });
+                                var item = new ListBoxItem { Content = mezua };
+                                txat.Items.Add(item);
+                                txat.ScrollIntoView(item);
                             }
                         });
                     },

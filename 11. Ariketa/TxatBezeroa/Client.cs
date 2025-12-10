@@ -11,7 +11,7 @@ namespace TxatBezeroa
     public class Client
     {
         private const int PORT = 5000;
-        private TcpClient client;
+        private TcpClient? client;
         private NetworkStream? Stream;
         private StreamReader? Reader;
         private StreamWriter? Writer;
@@ -46,13 +46,23 @@ namespace TxatBezeroa
                 LogBerria("Zerbitzarira konektatuta");
                 ConnectedEvent?.Invoke();
 
+                CreateConnectionChecker();
                 CreateReceiverThread();
             }
-            catch
+            catch { BezeroaItxi("Ezin izan da zerbitzaria atzitu"); }
+        }
+
+        private void CreateConnectionChecker()
+        {
+            new Thread(() =>
             {
-                BezeroaItxi();
-                LogBerria("Ezin izan da zerbitzaria atzitu");
-            }
+                while (alive)
+                {
+                    if (client.Client.Poll(0, SelectMode.SelectRead))
+                        BezeroaItxi("Konexioa amaitu da");
+                    Thread.Sleep(1000);
+                }
+            }).Start();
         }
 
         private void CreateReceiverThread()
@@ -65,31 +75,32 @@ namespace TxatBezeroa
                     {
                         var mezua = Reader?.ReadLine();
                         if (mezua != null)
+                        {
                             MessageArrivedEvent?.Invoke(mezua);
+                        }
                     }
                 }
-                catch { }
-                finally
-                {
-                    BezeroaItxi();
-                    LogBerria("Konexioa amaitu da");
-                }
+                catch { BezeroaItxi("Konexioa amaitu da"); }
             }).Start();
         }
 
         private void LogBerria(string log) => LogSentEvent?.Invoke(log);
 
-        public void MezuaBidali(string mezua) => Writer?.WriteLine(mezua);
+        public void MezuaBidali(string mezua)
+        {
+            try { Writer?.WriteLine(mezua); }
+            catch { BezeroaItxi("Konexioa amaitu da"); }
+        }
 
-        public void BezeroaItxi()
+        public void BezeroaItxi(string? log)
         {
             alive = false;
-            MezuaBidali("/disconnect");
             client?.Close();
             Stream?.Close();
             Reader?.Close();
             Writer?.Close();
             DisconnectedEvent?.Invoke();
+            if(log != null) LogBerria(log);
         }
     }
 }

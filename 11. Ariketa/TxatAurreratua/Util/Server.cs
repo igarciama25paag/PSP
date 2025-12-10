@@ -16,7 +16,7 @@ namespace TxatAurreratua.Util
         private TcpListener? listener;
         public bool alive = false;
 
-        private readonly object BezeroakLock = new();
+        public readonly object BezeroakLock = new();
 
         public delegate void ILogSent(string log);
         public ILogSent? LogSentEvent;
@@ -27,7 +27,7 @@ namespace TxatAurreratua.Util
         public delegate void IClientDisconnected(ServersideClient bezero);
         public IClientDisconnected? ClientDisconnectedEvent;
 
-        private readonly List<ServersideClient> Bezeroak = [];
+        public readonly List<ServersideClient> Bezeroak = [];
 
         public void Piztu()
         {
@@ -56,9 +56,11 @@ namespace TxatAurreratua.Util
             lock (BezeroakLock)
             {
                 listener?.Stop();
-                Bezeroak.Clear();
+                var bezReference = Bezeroak.ToList();
+                foreach (var bezero in bezReference)
+                    bezero.CloseClient();
             }
-            LogBerria("ZERBITZARIA itzalia da");
+            LogBerria("ZERBITZARIA itzali da");
         }
 
         private void BezeroBerriaItxaron(TcpListener listener)
@@ -76,7 +78,7 @@ namespace TxatAurreratua.Util
                 }
             }
             catch (SocketException) { }
-            catch (Exception) { LogBerria("Bezero konexio errorea"); }
+            catch { LogBerria("Bezero konexio errorea"); }
         }
 
         public void LogBerria(string log)

@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Double Start",
+    "Projects": [
+      {
+        "Path": "TxatAurreratua.csproj",
+        "Action": "Start",
+        "DebugTarget": "TxatAurreratua"
+      },
+      {
+        "Path": "..\\TxatBezeroa\\TxatBezeroa.csproj",
+        "Action": "Start",
+        "DebugTarget": "TxatBezeroa"
+      }
+    ]
+  }
+]

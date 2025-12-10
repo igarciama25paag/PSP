@@ -30,7 +30,22 @@ namespace TxatAurreratua.Util
 
             alive = true;
             Server.LogBerria($"Bezero berria '{Izena}'");
+
+            CreateConnectionChecker();
             CreateReceiverThread();
+        }
+
+        private void CreateConnectionChecker()
+        {
+            new Thread(() =>
+            {
+                while(alive)
+                {
+                    if (Client.Client.Poll(0, SelectMode.SelectRead))
+                        CloseClient();
+                    Thread.Sleep(1000);
+                }
+            }).Start();
         }
 
         private void CreateReceiverThread()
@@ -39,36 +54,38 @@ namespace TxatAurreratua.Util
             {
                 try
                 {
-                    while (Server.alive && alive)
+                    while (alive)
                     {
                         var mezua = Reader?.ReadLine();
                         if (mezua != null)
                         {
-                            if (mezua == "/disconnect")
-                                alive = false;
-                            else
-                                Server.SendEveryone($"{Izena}: {mezua}");
+                            Server.SendEveryone($"{Izena}: {mezua}");
                         }
                     }
-                    if(!Server.alive)
-                        Send("Zerbitzaria itzali da");
                 }
-                catch { Server.LogBerria($"'{Izena}' bezero errorea"); }
-                finally { CloseClient(); }
+                catch { CloseClient(); }
             }).Start();
         }
 
-        public void Send(string mezua) => Writer?.WriteLine(mezua);
+        public void Send(string mezua)
+        {
+            try { Writer?.WriteLine(mezua); }
+            catch { CloseClient(); }
+        }
 
         public void CloseClient()
         {
             alive = false;
-            Server.ClientDisconnectedEvent?.Invoke(this);
-            Server.LogBerria($"'{Izena}' bezeroa deskonektatu da");
             Client?.Close();
             Stream?.Close();
             Reader?.Close();
             Writer?.Close();
+            lock(Server.BezeroakLock)
+            {
+                Server.Bezeroak.Remove(this);
+            }
+            Server.ClientDisconnectedEvent?.Invoke(this);
+            Server.LogBerria($"'{Izena}' bezeroa deskonektatu da");
         }
 
         public override string? ToString() => Izena;

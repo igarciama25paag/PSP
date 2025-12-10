@@ -31,7 +31,7 @@ namespace TxatBezeroa
 
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            Client?.BezeroaItxi();
+            Client?.BezeroaItxi(null);
         }
 
         private void Konektatu(object sender, RoutedEventArgs e)
@@ -47,7 +47,7 @@ namespace TxatBezeroa
 
         private void Deskonektatu(object sender, RoutedEventArgs e)
         {
-            Client.BezeroaItxi();
+            Client.BezeroaItxi("konexioa itxi da");
         }
 
         private void Bidali(object sender, RoutedEventArgs e)
@@ -70,7 +70,9 @@ namespace TxatBezeroa
                     {
                         lock (TxatLock)
                         {
-                            txat.Items.Add(new ListBoxItem { Content = mezua });
+                            var item = new ListBoxItem { Content = mezua };
+                            txat.Items.Add(item);
+                            txat.ScrollIntoView(item);
                         }
                     });
                 },
