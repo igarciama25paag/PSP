@@ -16,8 +16,8 @@ namespace TxatAurreratua.Util
         private readonly NetworkStream Stream;
         private readonly StreamReader Reader;
         private readonly StreamWriter Writer;
-        private readonly string Izena;
-        private bool alive;
+        public readonly string Izena;
+        public bool Alive { get; private set; } = false;
 
         public ServersideClient(Server zerbitzari, TcpClient bezero)
         {
@@ -28,8 +28,8 @@ namespace TxatAurreratua.Util
             Writer = new StreamWriter(Stream) { AutoFlush = true };
             Izena = Reader.ReadLine() ?? "null";
 
-            alive = true;
-            Server.LogBerria($"Bezero berria '{Izena}'");
+            Alive = true;
+            Server.LogBerria($"Bezero berria '{Izena}'", true);
 
             CreateConnectionChecker();
             CreateReceiverThread();
@@ -39,13 +39,13 @@ namespace TxatAurreratua.Util
         {
             new Thread(() =>
             {
-                while(alive)
+                while (Alive)
                 {
                     if (Client.Client.Poll(0, SelectMode.SelectRead))
-                        CloseClient();
+                        CloseClient($"'{Izena}' bezeroa deskonektatu da");
                     Thread.Sleep(1000);
                 }
-            }).Start();
+            }) { IsBackground = true }.Start();
         }
 
         private void CreateReceiverThread()
@@ -54,28 +54,26 @@ namespace TxatAurreratua.Util
             {
                 try
                 {
-                    while (alive)
+                    while (Alive)
                     {
                         var mezua = Reader?.ReadLine();
                         if (mezua != null)
-                        {
                             Server.SendEveryone($"{Izena}: {mezua}");
-                        }
                     }
                 }
-                catch { CloseClient(); }
+                catch { CloseClient($"'{Izena}' bezeroa deskonektatu da"); }
             }).Start();
         }
 
         public void Send(string mezua)
         {
             try { Writer?.WriteLine(mezua); }
-            catch { CloseClient(); }
+            catch { CloseClient($"'{Izena}' bezeroa deskonektatu da"); }
         }
 
-        public void CloseClient()
+        public void CloseClient(string? log)
         {
-            alive = false;
+            Alive = false;
             Client?.Close();
             Stream?.Close();
             Reader?.Close();
@@ -85,7 +83,7 @@ namespace TxatAurreratua.Util
                 Server.Bezeroak.Remove(this);
             }
             Server.ClientDisconnectedEvent?.Invoke(this);
-            Server.LogBerria($"'{Izena}' bezeroa deskonektatu da");
+            if (log != null) Server.LogBerria(log, false);
         }
 
         public override string? ToString() => Izena;

@@ -45,56 +45,41 @@ namespace TxatAurreratua.UI
             Server.Itzali();
         }
 
-        private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        private void LogBerria(string log, bool good)
         {
-            Server.Itzali();
+            lock (LogLock)
+            {
+                var item = new ListBoxItem { Content = log };
+                if (good) item.Foreground = Brushes.Green;
+                else item.Foreground = Brushes.Red;
+                logs.Items.Add(item);
+                logs.ScrollIntoView(item);
+            }
         }
+
+        private void MezuBerria(string mezua)
+        {
+            lock (TxatLock)
+            {
+                var item = new ListBoxItem { Content = mezua };
+                txat.Items.Add(item);
+                txat.ScrollIntoView(item);
+            }
+        }
+
+        private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e) => Server.Itzali();
 
         private void ZerbitzariaSortu()
         {
             Server = new Server
             {
-                LogSentEvent = log =>
-                    {
-                        Dispatcher.Invoke(() =>
-                        {
-                            lock (LogLock)
-                            {
-                                var item = new ListBoxItem { Content = log };
-                                logs.Items.Add(item);
-                                logs.ScrollIntoView(item);
-                            }
-                        });
-                    },
+                LogSentEvent = (log, good) => Dispatcher.Invoke(() => LogBerria(log, good)),
 
-                MessageSentEvent = mezua =>
-                    {
-                        Dispatcher.Invoke(() =>
-                        {
-                            lock (TxatLock)
-                            {
-                                var item = new ListBoxItem { Content = mezua };
-                                txat.Items.Add(item);
-                                txat.ScrollIntoView(item);
-                            }
-                        });
-                    },
+                MessageSentEvent = mezua => Dispatcher.Invoke(() => MezuBerria(mezua)),
 
-                ClientConnectedEvent = bezero =>
-                    {
-                        Dispatcher.Invoke(() =>
-                        {
-                            Bezeroak.Add(bezero);
-                        });
-                    },
+                ClientConnectedEvent = bezero => Dispatcher.Invoke(() => Bezeroak.Add(bezero)),
 
-                ClientDisconnectedEvent = bezero =>
-                {
-                    Dispatcher.Invoke(() =>
-                    {
-                        Bezeroak.Remove(bezero);
-                    });
-                }
+                ClientDisconnectedEvent = bezero => Dispatcher.Invoke(() => Bezeroak.Remove(bezero))
             };
         }
     }

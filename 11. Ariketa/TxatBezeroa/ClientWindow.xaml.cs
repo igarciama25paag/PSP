@@ -16,7 +16,6 @@ namespace TxatBezeroa
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly object ErroreLock = new();
         private readonly object TxatLock = new();
         private readonly object BidaliLock = new();
 
@@ -34,23 +33,38 @@ namespace TxatBezeroa
             Client?.BezeroaItxi(null);
         }
 
-        private void Konektatu(object sender, RoutedEventArgs e)
+        private void KonektatuClick(object sender, RoutedEventArgs e) => Konektatu();
+
+        private void KonektatuEnter(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Konektatu();
+                mezua.Focus();
+            }
+        }
+
+        private void Konektatu()
         {
             if (izena.Text != string.Empty)
                 Client.Konektatu(ip.Text.Trim(), izena.Text.Trim());
             else
             {
-                erroreMezua.Text = "Izena ezin da utsik utzi";
+                LogBerria("Izena ezin da utsik utzi", false);
                 izena.Focus();
             }
         }
 
-        private void Deskonektatu(object sender, RoutedEventArgs e)
+        private void DeskonektatuClick(object sender, RoutedEventArgs e) => Client.BezeroaItxi("Konexioa itxi da");
+
+        private void BidaliClick(object sender, RoutedEventArgs e) => Bidali();
+
+        private void BidaliEnter(object sender, KeyEventArgs e)
         {
-            Client.BezeroaItxi("konexioa itxi da");
+            if (e.Key == Key.Enter) Bidali();
         }
 
-        private void Bidali(object sender, RoutedEventArgs e)
+        private void Bidali()
         {
             lock (BidaliLock)
             {
@@ -60,54 +74,51 @@ namespace TxatBezeroa
             mezua.Text = string.Empty;
         }
 
+        private void LogBerria(string log, bool good)
+        {
+            lock (TxatLock)
+            {
+                var item = new ListBoxItem { Content = log };
+                if (good) item.Foreground = Brushes.Green;
+                else item.Foreground = Brushes.Red;
+                txat.Items.Add(item);
+                txat.ScrollIntoView(item);
+            }
+        }
+
+        private void MezuBerria(string mezua)
+        {
+            lock (TxatLock)
+            {
+                var item = new ListBoxItem { Content = mezua };
+                txat.Items.Add(item);
+                txat.ScrollIntoView(item);
+            }
+        }
+
         private void BezeroaSortu()
         {
             Client = new Client
             {
-                MessageArrivedEvent = mezua =>
-                {
-                    Dispatcher.Invoke(() =>
-                    {
-                        lock (TxatLock)
-                        {
-                            var item = new ListBoxItem { Content = mezua };
-                            txat.Items.Add(item);
-                            txat.ScrollIntoView(item);
-                        }
-                    });
-                },
+                MessageArrivedEvent = mezua => Dispatcher.Invoke(() => MezuBerria(mezua)),
 
-                LogSentEvent = log =>
-                {
-                    Dispatcher.Invoke(() =>
-                    {
-                        lock (ErroreLock)
-                        {
-                            erroreMezua.Text = log;
-                        }
-                    });
-                },
+                LogSentEvent = (log, good) => Dispatcher.Invoke(() => LogBerria(log, good)),
 
                 ConnectedEvent = () =>
-                {
                     Dispatcher.Invoke(() =>
                     {
-                        txat.Items.Clear();
                         konektatuButton.IsEnabled = false;
                         deskonektatuButton.IsEnabled = true;
                         txatBox.IsEnabled = true;
-                    });
-                },
+                    }),
 
                 DisconnectedEvent = () =>
-                {
                     Dispatcher.Invoke(() =>
                     {
                         konektatuButton.IsEnabled = true;
                         deskonektatuButton.IsEnabled = false;
                         txatBox.IsEnabled = false;
-                    });
-                }
+                    })
             };
         }
     }

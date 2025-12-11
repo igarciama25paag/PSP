@@ -14,11 +14,11 @@ namespace TxatAurreratua.Util
     {
         private const int PORT = 5000;
         private TcpListener? listener;
-        public bool alive = false;
+        public bool Alive { get; private set; } = false;
 
         public readonly object BezeroakLock = new();
 
-        public delegate void ILogSent(string log);
+        public delegate void ILogSent(string log, bool good);
         public ILogSent? LogSentEvent;
         public delegate void IMessageSent(string mezua);
         public IMessageSent? MessageSentEvent;
@@ -31,36 +31,36 @@ namespace TxatAurreratua.Util
 
         public void Piztu()
         {
-            alive = true;
+            Alive = true;
             new Thread(() =>
             {
                 try
                 {
                     listener = new(IPAddress.Any, PORT);
                     listener.Start();
-                    LogBerria($"ZERBITZARIA hasi da PORT:{PORT}");
+                    LogBerria($"ZERBITZARIA hasi da PORT:{PORT}", true);
 
-                    while (alive)
-                    {
-                        BezeroBerriaItxaron(listener);
-                    }
+                    while (Alive) BezeroBerriaItxaron(listener);
                 }
-                catch { LogBerria("Zerbitzari errorea"); Itzali(); }
-                finally { listener?.Stop(); Bezeroak.Clear(); }
+                catch
+                {
+                    LogBerria("Zerbitzari errorea", false);
+                    Itzali();
+                }
             }).Start();
         }
 
         public void Itzali()
         {
-            alive = false;
+            Alive = false;
             lock (BezeroakLock)
             {
                 listener?.Stop();
                 var bezReference = Bezeroak.ToList();
                 foreach (var bezero in bezReference)
-                    bezero.CloseClient();
+                    bezero.CloseClient(null);
             }
-            LogBerria("ZERBITZARIA itzali da");
+            LogBerria("ZERBITZARIA itzali da", false);
         }
 
         private void BezeroBerriaItxaron(TcpListener listener)
@@ -78,12 +78,12 @@ namespace TxatAurreratua.Util
                 }
             }
             catch (SocketException) { }
-            catch { LogBerria("Bezero konexio errorea"); }
+            catch { LogBerria("Bezero konexio errorea", false); }
         }
 
-        public void LogBerria(string log)
+        public void LogBerria(string log, bool good)
         {
-            LogSentEvent?.Invoke($"[{DateTime.Now.ToShortTimeString()}] {log}");
+            LogSentEvent?.Invoke($"[{DateTime.Now.ToShortTimeString()}] {log}", good);
         }
 
         public void MezuBerria(string mezua)

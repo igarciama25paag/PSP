@@ -16,7 +16,7 @@ namespace TxatBezeroa
         private StreamReader? Reader;
         private StreamWriter? Writer;
 
-        public delegate void ILogSent(string log);
+        public delegate void ILogSent(string log, bool good);
         public ILogSent? LogSentEvent;
         public delegate void IMessageArrived(string mezua);
         public IMessageArrived? MessageArrivedEvent;
@@ -43,7 +43,7 @@ namespace TxatBezeroa
 
                 Writer.WriteLine(Izena);
 
-                LogBerria("Zerbitzarira konektatuta");
+                LogBerria("Zerbitzarira konektatuta", true);
                 ConnectedEvent?.Invoke();
 
                 CreateConnectionChecker();
@@ -75,16 +75,14 @@ namespace TxatBezeroa
                     {
                         var mezua = Reader?.ReadLine();
                         if (mezua != null)
-                        {
                             MessageArrivedEvent?.Invoke(mezua);
-                        }
                     }
                 }
                 catch { BezeroaItxi("Konexioa amaitu da"); }
-            }).Start();
+            }) { IsBackground = true }.Start();
         }
 
-        private void LogBerria(string log) => LogSentEvent?.Invoke(log);
+        private void LogBerria(string log, bool good) => LogSentEvent?.Invoke(log, good);
 
         public void MezuaBidali(string mezua)
         {
@@ -100,7 +98,7 @@ namespace TxatBezeroa
             Reader?.Close();
             Writer?.Close();
             DisconnectedEvent?.Invoke();
-            if(log != null) LogBerria(log);
+            if(log != null) LogBerria(log, false);
         }
     }
 }
